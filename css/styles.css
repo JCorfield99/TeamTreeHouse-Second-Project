@@ -42,7 +42,7 @@ h3 {
 }
 
 img {
-    width: 90vw;
+    max-width: 90%;
 }
 
 p {
@@ -68,7 +68,8 @@ footer {
 }
 
 footer p,
-footer a {
+footer a,
+.secondary-nav {
     margin: 30px 20px;
     font: 700 .9rem "Roboto", sans-serif;
 }
@@ -96,6 +97,14 @@ h2 {
     font: 700 .9rem "Roboto", sans-serif;
 }
 
+.secondary-nav {
+    display: none;
+}
+
+.secondary-nav a {
+    margin-right: 0;
+}
+
 /* ==== Layout Containers ==== */
 
 .wrapper,
@@ -105,7 +114,12 @@ main {
 
 .main-footer {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
+}
+
+.hidden-big {
+    order: 1;
 }
 
 /* ==== Page Elements ==== */
@@ -138,7 +152,7 @@ main {
 #contact p,
 .contact-info li {
     font: 300 1rem/1.5 "Roboto", sans-serif;
-    color: #666;
+    color: rgba(102, 102, 102, .8);
 }
 
 #contact {
@@ -156,13 +170,20 @@ main {
 @media screen and (min-width: 768px) {
     .main-header,
     .main-nav,
-    .intro {
+    .secondary-nav,
+    .intro,
+    #portfolio,
+    .portfolio-wrapper {
         display: flex;
+    }
+
+    .main-header,
+    #portfolio {
+        flex-direction: column;
     }
 
     .main-header {
         padding-top: 40px;
-        flex-direction: column;
         align-items: center;
     }
 
@@ -184,9 +205,14 @@ main {
     }
 
     .intro p {
+        text-align: left;
+    }
+
+    .intro p,
+    #contact p,
+    .contact-info li {
         flex: 2;
         font-size: 1.3rem;
-        text-align: left;
     }
 
     .profile-image{
@@ -200,6 +226,32 @@ main {
     .intro p,
     .profile-image {
         margin: 0 10px;
+    }
+
+    .portfolio-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .portfolio-item {
+        flex: 1 50%;
+    }
+
+    .portfolio-item p {
+        padding: 0 40px;
+        margin-bottom: 60px;
+    }
+
+    .main-footer {
+        height: 125px;
+    }
+
+    .hidden-big {
+        display: none;
+        order: 0;
+    }
+
+    .secondary-nav {
+        order: 1;
     }
 }
 
