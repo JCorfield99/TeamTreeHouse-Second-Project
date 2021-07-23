@@ -116,7 +116,7 @@ main {
 }
 
 .profile-image {
-    width: 65%;
+    max-width: 65%;
     margin-top: 40px;
 }
 
@@ -154,7 +154,53 @@ main {
 ================================= */
 
 @media screen and (min-width: 768px) {
+    .main-header,
+    .main-nav,
+    .intro {
+        display: flex;
+    }
 
+    .main-header {
+        padding-top: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-wrapper {
+        background-color: #fff;
+    }
+
+    .main-nav {
+        width: 40%;
+        margin: 0 auto;
+        flex: 1;
+        justify-content: space-between;
+    }
+
+    .intro {
+        width: 100vw;
+        padding: 0 5%;
+        margin: 40px 0;
+    }
+
+    .intro p {
+        flex: 2;
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    .profile-image{
+        width: 40%;
+        margin: 0;
+        flex: 1;
+        order: 1;
+        align-self: center;
+    }
+
+    .intro p,
+    .profile-image {
+        margin: 0 10px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
