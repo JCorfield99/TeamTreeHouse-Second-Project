@@ -32,8 +32,45 @@ h1 {
     font-family: "Comfortaa", sans-serif;
 }
 
+h2 {
+    margin: 40px 0;
+}
+
+h3 {
+    margin: 20px 0;
+    font: 400 1.2rem "Roboto", sans-serif;
+}
+
 img {
     width: 90vw;
+}
+
+p {
+    margin-bottom: 30px;
+    font: 300 .95rem/1.5 "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+h2 {
+    text-transform: uppercase;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+footer {
+    border-top: 2px solid #e0e0e0;
+}
+
+footer p,
+footer a {
+    margin: 30px 20px;
+    font: 700 .9rem "Roboto", sans-serif;
 }
 
 /* =================================
@@ -42,22 +79,21 @@ img {
 
 /* ==== Navigation ==== */
 
-.main-nav {
+.main-nav,
+.contact-info {
     padding: 0;
     margin: 0;
 }
 
 .main-nav li {
-    list-style-type: none;
     padding: 10px 0;
     margin-bottom: 5px;
     background-color: #fff;
 }
 
-.main-nav a {
+.main-nav a,
+h2 {
     font: 700 .9rem "Roboto", sans-serif;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 /* ==== Layout Containers ==== */
@@ -65,6 +101,11 @@ img {
 .wrapper,
 main {
     margin: 0 5vw;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* ==== Page Elements ==== */
@@ -79,11 +120,33 @@ main {
     margin-top: 40px;
 }
 
-.intro p {
+.contact-info li {
+    padding-bottom: 20px;
+}
+
+.contact-info strong {
+    margin-left: 10px;
+}
+
+.intro p,
+#contact p {
     padding: 1.25rem 0;
     margin: 0;
+}
+
+.intro p,
+#contact p,
+.contact-info li {
     font: 300 1rem/1.5 "Roboto", sans-serif;
     color: #666;
+}
+
+#contact {
+    margin: 100px 0;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
 }
 
 /* =================================
