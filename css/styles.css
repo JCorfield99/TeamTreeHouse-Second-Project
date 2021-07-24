@@ -64,7 +64,7 @@ ul li {
 }
 
 footer {
-    border-top: 2px solid #e0e0e0;
+    border-top: 2px solid #303;
     padding: 0 5%;
 }
 
@@ -74,6 +74,7 @@ footer a,
     padding: 30px 0;
     margin: 0;
     font: 700 .9rem "Roboto", sans-serif;
+    color: #ccc;
 }
 
 /* =================================
@@ -91,7 +92,10 @@ footer a,
 .main-nav li {
     padding: 10px 0;
     margin-bottom: 5px;
-    background-color: #fff;
+}
+
+.main-nav a {
+    color: #ccc;
 }
 
 .main-nav a,
@@ -120,6 +124,7 @@ main {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    background-color: #303;
 }
 
 .hidden-big {
@@ -128,14 +133,20 @@ main {
 
 /* ==== Page Elements ==== */
 
-.main-header,
-.main-footer {
-    background-color: #f6f6f6;
+.main-header {
+    border-bottom: 2px solid #303;
+    background-color: #303;
+    color: #ccc;
 }
 
 .profile-image {
     max-width: 65%;
     margin-top: 40px;
+    border-radius: 50%;
+}
+
+.portfolio-item img {
+    border-radius: 20px 0;
 }
 
 .contact-info li {
@@ -152,6 +163,7 @@ main {
 
 .intro p {
     padding: 1.25rem 5%;
+    color: rgba(204, 204, 204, .8);
 }
 
 .intro p,
@@ -163,6 +175,10 @@ main {
 #contact p,
 .contact-info li {
     font: 300 1rem/1.5 "Roboto", sans-serif;
+}
+
+#contact p,
+.contact-info li {
     color: rgba(102, 102, 102, .8);
 }
 
@@ -201,7 +217,7 @@ main {
     }
 
     .nav-wrapper {
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, .8);
         width: 100vw;
     }
 
@@ -210,6 +226,10 @@ main {
         margin: 0 auto;
         flex: 1;
         justify-content: space-between;
+    }
+
+    .main-nav a {
+        color: #333;
     }
 
     .intro {
@@ -280,7 +300,7 @@ main {
 
     .nav-wrapper,
     .main-nav li {
-        background-color: #f6f6f6;
+        background-color: #303;
     }
 
     .main-nav {
@@ -289,6 +309,10 @@ main {
 
     .main-nav li {
         padding-left: 40px;
+    }
+
+    .main-nav a {
+        color: #ccc;
     }
 
     .wrapper {
