@@ -83,8 +83,13 @@ footer a,
 
 /* ==== Navigation ==== */
 
+nav a:hover {
+    color: #909;
+}
+
 .main-nav,
-.contact-info {
+.contact-info,
+.skill-list {
     padding: 0;
     margin: 0;
 }
@@ -173,12 +178,16 @@ main {
 
 .intro p,
 #contact p,
-.contact-info li {
+.contact-info li,
+#skills p,
+.skill-list li {
     font: 300 1rem/1.5 "Roboto", sans-serif;
 }
 
 #contact p,
-.contact-info li {
+.contact-info li,
+#skills p,
+.skill-list li {
     color: rgba(102, 102, 102, .8);
 }
 
@@ -188,6 +197,11 @@ main {
 
 #contact h2 {
     margin-bottom: 20px;
+}
+
+.skill-list li {
+    padding-bottom: 10px;
+    font-weight: 700;
 }
 
 /* =================================
@@ -244,7 +258,9 @@ main {
 
     .intro p,
     #contact p,
-    .contact-info li {
+    .contact-info li,
+    #skills p,
+    .skill-list li {
         flex: 2;
         font-size: 1.3rem;
     }
@@ -326,6 +342,15 @@ main {
 
     .portfolio-item {
         flex-basis: 30%;
+    }
+
+    #skills h2 {
+        margin-top: 0;
+    }
+
+    #skills p {
+        width: 65vw;
+        margin: 40px auto;
     }
 
     #contact {
